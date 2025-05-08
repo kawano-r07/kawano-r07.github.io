@@ -1,5 +1,5 @@
 body,h2,h3 {
-  font-family: "Montserrat","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","Sawarabi Mincho",Meiryo,sans-serif;
+  font-family: "Montserrat","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","Sawarabi Mincho",Meiryo,sans-serif !inportant;
   font-size: 15px;
   letter-spacing: .05em;
   color: #333;
