@@ -18,19 +18,12 @@ img {
   border-style: none;
 }
 
-
-
 .pc-only {
   display: block;
 }
 
 .sp-only {
   display: none;
-}
-.sawarabi-mincho-regular {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 /*--------------------------------
@@ -159,15 +152,15 @@ img {
 .mv-title {
   font-size: 60px;
   font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 5px;
+  line-height: 1.4;
+  margin-bottom: 3%;
   letter-spacing: .1em;
 }
 .mv-subtitle {
   font-size: 20px;
   font-weight: bold;
   line-height: 1;
-  margin-bottom: 40px;
+  margin-bottom: 12%;
   letter-spacing: .08em;
 }
 
