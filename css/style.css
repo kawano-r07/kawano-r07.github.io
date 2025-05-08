@@ -1,4 +1,4 @@
-body {
+body,h2,h3 {
   font-family: "Montserrat","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans","Sawarabi Mincho",Meiryo,sans-serif;
   font-size: 15px;
   letter-spacing: .05em;
