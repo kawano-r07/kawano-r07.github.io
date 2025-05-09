@@ -11,6 +11,11 @@ a {
   color: #1ca9e3;
 }
 
+/*デフォルトのマウスカーソルを非表示にする*/
+html,body,a{
+  cursor: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
