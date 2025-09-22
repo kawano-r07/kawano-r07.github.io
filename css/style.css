@@ -101,26 +101,20 @@ html,body,a{
 /* 独自マウスカーソル */
 .cursor {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: -5px; /*座標調整*/
+  left: -5px; /*座標調整*/
   width: 15px;
   height: 15px;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 50%;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s ease;
   z-index: 10000;
+  transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s; transform: translate(0, 0);
+  pointer-events: none;
 }
 
 .cursor--hover {
   transform: translate(-50%, -50%) scale(2);
   background: rgba(0,0,0,0.3);
-}
-
-/* デフォルトカーソルを非表示 */
-html, body, a {
-  cursor: none;
 }
 
 /*aタグにホバーした時に見た目変化*/
