@@ -37,21 +37,3 @@ for (var i = 0; i < link.length; i++) {
         cursor.classList.remove('cursor--hover');   
     });
 }
-
-// カーソル要素を取得
-var cursor = document.getElementById('cursor'); 
-
-// マウスに追従させる
-document.addEventListener('mousemove', function(e) {
-    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
-});
-
-// aタグにホバーしたとき拡大
-document.querySelectorAll('a').forEach(function(link){
-    link.addEventListener('mouseenter', function() {
-        cursor.classList.add('cursor--hover');
-    });
-    link.addEventListener('mouseleave', function() {
-        cursor.classList.remove('cursor--hover');
-    });
-});
