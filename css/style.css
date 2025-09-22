@@ -98,19 +98,29 @@ html,body,a{
   cursor: none;
 }
 
-/*独自のマウスカーソルを作成*/
+/* 独自マウスカーソル */
 .cursor {
   position: fixed;
-  top: -5px; /*座標調整*/
-  left: -5px; /*座標調整*/
+  top: 0;
+  left: 0;
   width: 15px;
   height: 15px;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 50%;
-  z-index: 1000;
-  transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s;
-  transform: translate(0, 0);
   pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+  z-index: 10000;
+}
+
+.cursor--hover {
+  transform: translate(-50%, -50%) scale(2);
+  background: rgba(0,0,0,0.3);
+}
+
+/* デフォルトカーソルを非表示 */
+html, body, a {
+  cursor: none;
 }
 
 /*aタグにホバーした時に見た目変化*/
@@ -206,7 +216,7 @@ img {
 }
 
 .section:nth-of-type(odd) {
-  background-color: #f7f7f7;
+  background-color: #fff0f0;
 }
 
 .container {
