@@ -317,30 +317,20 @@ img {
   height: 85vh;
   text-align: center;
   overflow: hidden;
-  background: #fff;
+
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 219, 230, .55), transparent 35%),
+    radial-gradient(circle at 85% 75%, rgba(255, 236, 242, .75), transparent 35%),
+    linear-gradient(135deg, #ffffff 0%, #fffafb 100%);
 }
 
-.mv::before,
+/* 背景の細いフレーム */
 .mv::after {
   content: "";
   position: absolute;
-  width: 420px;
-  height: 420px;
-  border-radius: 50%;
-  filter: blur(90px);
-  z-index: 0;
-}
-
-.mv::before {
-  background: rgba(255, 221, 230, .35);
-  top: -140px;
-  left: -140px;
-}
-
-.mv::after {
-  background: rgba(214, 235, 255, .35);
-  right: -140px;
-  bottom: -140px;
+  inset: 32px;
+  border: 1px solid rgba(255, 220, 230, .35);
+  pointer-events: none;
 }
 
 .mv-container {
@@ -349,20 +339,20 @@ img {
 }
 
 .mv-title {
-  font-size: 72px;
-  font-weight: 700;
-  line-height: 1.2;
+  font-size: 30px;
+  line-height: 1.5;
   margin-bottom: 16px;
   letter-spacing: .08em;
 }
 
 .mv-subtitle {
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.6;
   margin-bottom: 0;
   letter-spacing: .12em;
 }
+
 /*--------------------------------
  Works
 ---------------------------------*/
