@@ -310,35 +310,48 @@ img {
  メインビジュアル
 ---------------------------------*/
 .mv {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 85vh;
   text-align: center;
+  overflow: hidden;
+
+  background:
+    linear-gradient(#f3f3f3 1px, transparent 1px),
+    linear-gradient(90deg, #f3f3f3 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.mv::before,
+.mv::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: .45;
+}
+
+.mv::before {
+  width: 320px;
+  height: 320px;
+  background: #f0f0f0;
+  top: -120px;
+  left: -120px;
+}
+
+.mv::after {
+  width: 280px;
+  height: 280px;
+  background: #ececec;
+  right: -100px;
+  bottom: -100px;
 }
 
 .mv-container {
-  padding: 0 40px;
-}
-
-.mv-title {
-  font-size: 60px;
-  font-weight: bold;
-  line-height: 1.4;
-  margin-bottom: 3%;
-  letter-spacing: .1em;
-}
-.mv-subtitle {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 1;
-  margin-bottom: 12%;
-  letter-spacing: .08em;
-}
-
-.mv-text {
-  font-size: 16px;
-  line-height: 1.8;
+  position: relative;
+  z-index: 1;
 }
 
 /*--------------------------------
