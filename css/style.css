@@ -547,6 +547,20 @@ img {
   text-align: center;
 }
 
+
+/* pagesトップ画像 */
+.article-top-image {
+  display: block;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 注記 */
+.note {
+  font-size: 13px;
+}
+
 /*media Queries 767
 ----------------------------------------------------*/
 @media screen and (max-width: 767px) {
@@ -717,18 +731,5 @@ img {
     line-height: 1.7;
     margin-bottom: 20px;
   }
-
-/* pagesトップ画像 */
-.article-top-image {
-  display: block;
-  max-width: 500px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-/* 注記 */
-.note {
-  font-size: 13px;
-}
 
 }
