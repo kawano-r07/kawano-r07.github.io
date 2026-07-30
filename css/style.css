@@ -745,13 +745,21 @@ img {
     padding: 0 20px;
   }
 
-  .mv-title {
-    font-size: 30px;
-  }
-  .mv-subtitle {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
+.mv-title {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  letter-spacing: .08em;
+}
+
+.mv-subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 0;
+  letter-spacing: .12em;
+}
 
   .mv-text {
     font-size: 14px;
