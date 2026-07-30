@@ -309,6 +309,9 @@ img {
 /*--------------------------------
  メインビジュアル
 ---------------------------------*/
+/*--------------------------------
+ メインビジュアル
+---------------------------------*/
 .mv {
   position: relative;
   display: flex;
@@ -319,18 +322,10 @@ img {
   overflow: hidden;
 
   background:
-    radial-gradient(circle at 15% 20%, rgba(255, 219, 230, .55), transparent 35%),
-    radial-gradient(circle at 85% 75%, rgba(255, 236, 242, .75), transparent 35%),
-    linear-gradient(135deg, #ffffff 0%, #fffafb 100%);
-}
-
-/* 背景の細いフレーム */
-.mv::after {
-  content: "";
-  position: absolute;
-  inset: 32px;
-  border: 1px solid rgba(255, 220, 230, .75);
-  pointer-events: none;
+    radial-gradient(circle at 15% 20%, rgba(255, 220, 230, 0.6) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(255, 235, 242, 0.6) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(255, 248, 250, 0.8) 0%, transparent 60%),
+    linear-gradient(180deg, #ffffff 0%, #fff7f9 100%);
 }
 
 .mv-container {
