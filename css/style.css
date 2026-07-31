@@ -93,6 +93,21 @@ opacity:0;
 }
 }
 
+/*スクロールアニメーション*/
+
+.fadein {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity .8s ease,
+    transform .8s ease;
+}
+
+.fadein.is-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /*デフォルトのマウスカーソルを非表示にする*/
 html,body,a{
   cursor: none;
