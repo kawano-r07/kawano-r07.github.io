@@ -37,3 +37,18 @@ for (var i = 0; i < link.length; i++) {
         cursor.classList.remove('cursor--hover');   
     });
 }
+
+//スクロールアニメーション
+const targets = document.querySelectorAll(".fadein");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("is-show");
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+targets.forEach(target => observer.observe(target));
