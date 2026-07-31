@@ -370,10 +370,6 @@ img {
   transform:translateX(-50%) scaleX(1);
 }
 
-
-/*--------------------------------
- メインビジュアル
----------------------------------*/
 /*--------------------------------
  メインビジュアル
 ---------------------------------*/
@@ -382,7 +378,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 85vh;
+  height: 70vh;
   text-align: center;
   overflow: hidden;
 
