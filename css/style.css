@@ -805,7 +805,7 @@ img {
   transform-origin: left;
 }
 
-.article-body img {
+.article-body img:not(.article-top-image) {
   display: block;
   max-width: 100%;
   margin: 0 auto;
