@@ -816,9 +816,11 @@ img {
 /* pagesトップ画像 */
 .article-top-image {
   display: block;
-  max-width: 500px;
   width: 100%;
-  margin: 0 auto;
+  max-width: 500px;
+  margin: 0 auto 40px;
+  border-radius: 14px;
+  box-shadow: none;
 }
 
 /* 注記 */
