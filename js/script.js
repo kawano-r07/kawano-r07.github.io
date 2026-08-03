@@ -52,3 +52,25 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 targets.forEach(target => observer.observe(target));
+
+//ハンバーガーメニュー
+const hamburger = document.getElementById("js-hamburger");
+const gnav = document.querySelector(".gnav");
+
+hamburger.addEventListener("click", () => {
+
+    hamburger.classList.toggle("active");
+    gnav.classList.toggle("open");
+
+});
+
+document.querySelectorAll(".gnav a").forEach(link=>{
+
+    link.addEventListener("click",()=>{
+
+        hamburger.classList.remove("active");
+        gnav.classList.remove("open");
+
+    });
+
+});
