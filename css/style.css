@@ -109,8 +109,25 @@ opacity:0;
 }
 
 /*デフォルトのマウスカーソルを非表示にする*/
-html,body,a{
-  cursor: none;
+@media (min-width: 768px){
+  html,
+  body,
+  a{
+    cursor: none;
+  }
+}
+
+/* SPは通常カーソル */
+@media (max-width: 767px){
+  html,
+  body,
+  a{
+    cursor: auto;
+  }
+
+  .cursor{
+    display:none;
+  }
 }
 
 /* 独自マウスカーソル */
@@ -325,17 +342,12 @@ img {
 .gnav-item a{
   position:relative;
   display:inline-block;
-
+  font-size:clamp(9px,2vw,13px);
   padding:8px 0;
-
   color:#555;
-
-  font-size:13px;
   font-weight:500;
-
   letter-spacing:.18em;
   text-transform:uppercase;
-
   transition:
     color .3s ease,
     transform .3s ease;
