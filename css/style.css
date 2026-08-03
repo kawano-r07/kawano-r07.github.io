@@ -164,6 +164,7 @@ opacity:0;
   position:absolute;
   bottom: 5%;
   left: 8%;
+  z-index: 9999;
 }
 
 .scroll_down a{
